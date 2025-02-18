@@ -10,8 +10,7 @@ import java.util.List;
  * <p>
  * Explanation: We have to find all the subset’s sum and print them.
  * in this case the generated subsets are
- * [ [], [1], [2], [2,1], [5], [5,1], [5,2]. [5,2,1],so the sums we get will
- * be  0,1,2,3,5,6,7,8
+ * [ [], [1], [2], [2,1], [5], [5,1], [5,2]. [5,2,1]
  **/
 
 public class Subset {
