@@ -43,7 +43,10 @@ public class PermutationInString {
             }
         }
         return false;
+    }
 
-
+    public static void main(String[] args) {
+        PermutationInString ps = new PermutationInString();
+        System.out.print(ps.checkInclusion("abc", "lecabee"));
     }
 }
