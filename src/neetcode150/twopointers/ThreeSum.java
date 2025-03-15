@@ -1,4 +1,4 @@
-package twopointers;
+package neetcode150.twopointers;
 
 import java.util.ArrayList;
 import java.util.Arrays;

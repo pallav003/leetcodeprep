@@ -1,7 +1,6 @@
-package arrayproblems;
+package neetcode150.arrayproblems;
 
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 /**

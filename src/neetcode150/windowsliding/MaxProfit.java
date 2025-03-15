@@ -1,4 +1,4 @@
-package windowsliding;
+package neetcode150.windowsliding;
 
 /**
  * Best Time to Buy and Sell Stock

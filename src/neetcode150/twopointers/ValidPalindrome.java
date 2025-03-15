@@ -1,4 +1,4 @@
-package twopointers;
+package neetcode150.twopointers;
 
 /**
  *

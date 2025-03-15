@@ -1,4 +1,4 @@
-package windowsliding;
+package neetcode150.windowsliding;
 
 import java.util.Arrays;
 

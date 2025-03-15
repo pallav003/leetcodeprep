@@ -1,4 +1,4 @@
-package windowsliding;
+package neetcode150.windowsliding;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,6 +22,7 @@ public class LongestRepeatingCharacterReplacement {
         int maxFreq = 0;
         int output = 0;
         Map<Character, Integer> freqMap = new HashMap<>();
+        //AABABBA
         for (int right = 0; right < s.length(); right++) {
             char c = s.charAt(right);
             freqMap.put(c, freqMap.getOrDefault(c, 0) + 1);
