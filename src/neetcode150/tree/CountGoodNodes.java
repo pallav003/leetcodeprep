@@ -16,6 +16,7 @@ package neetcode150.tree;
  * Input: root = [1,2,-1,3,4]
  * <p>
  * Output: 4
+ *
  */
 public class CountGoodNodes {
     public int goodNodes(TreeNode root) {
