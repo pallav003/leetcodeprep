@@ -41,15 +41,8 @@ import java.util.List;
  */
 public class RedundantConnection {
     public int[] findRedundantConnection(int[][] edges) {
-        int n = edges.length;
-        List<List<Integer>> adj = new ArrayList<>();
-        for (int i = 0; i <= n; i++) {
-            adj.add(new ArrayList<>());
-        }
 
-        for (int [] edge : edges) {
-
-        }
+        //solution pending
 
     }
 }
