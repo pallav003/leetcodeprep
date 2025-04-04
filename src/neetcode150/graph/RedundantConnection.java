@@ -43,6 +43,6 @@ public class RedundantConnection {
     public int[] findRedundantConnection(int[][] edges) {
 
         //solution pending
-
+    return new int[] {};
     }
 }
