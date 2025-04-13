@@ -45,43 +45,24 @@ public class SubSetSumEqualK {
 
     //Recursive code
 
-    public static boolean subsetSumRecursive(int n, int k, int[] arr) {
-        return helper(n - 1, k, arr);
+    public boolean isSubsetSum(int[] arr, int target) {
+        if (arr == null || arr.length == 0) return target == 0;
+        // Initialize memoization table with null (uncomputed states)
+        Boolean[][] memo = new Boolean[arr.length][target + 1];
+        return subsetHelper(arr.length - 1, arr, target, memo);
     }
 
-    private static boolean helper(int index, int target, int[] arr) {
+    private boolean subsetHelper(int currIndex, int[] arr, int target, Boolean[][] memo) {
         if (target == 0) return true;
-        if (index == 0) return arr[0] == target;
+        if (target < 0 || currIndex < 0) return false;
 
-        boolean notPick = helper(index - 1, target, arr);
-        boolean pick = false;
-        if (arr[index] <= target) {
-            pick = helper(index - 1, target - arr[index], arr);
-        }
-        return pick || notPick;
-    }
+        if (memo[currIndex][target] != null) return memo[currIndex][target];
 
-    //Recursive code with meomization
-    public static boolean subsetSumMemo(int n, int k, int[] arr) {
-        Boolean[][] dp = new Boolean[n][k + 1];
-        return memoHelper(n - 1, k, arr, dp);
-    }
+        boolean pick = subsetHelper(currIndex - 1, arr, target - arr[currIndex], memo);
+        boolean notPick = subsetHelper(currIndex - 1, arr, target, memo);
 
-    private static boolean memoHelper(int index, int target, int[] arr, Boolean[][] dp) {
-        if (target == 0) return true;
-        if (index == 0) return arr[0] == target;
-
-        if (dp[index][target] != null) {
-            return dp[index][target];
-        }
-
-        boolean notPick = memoHelper(index - 1, target, arr, dp);
-        boolean pick = false;
-        if (arr[index] <= target) {
-            pick = memoHelper(index - 1, target - arr[index], arr, dp);
-        }
-
-        return dp[index][target] = pick || notPick;
+        memo[currIndex][target] = pick || notPick;
+        return memo[currIndex][target];
     }
 
     public static boolean subsetSumToK(int n, int k, int arr[]) {
