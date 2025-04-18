@@ -1,6 +1,7 @@
 package neetcode150.backtracking;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -27,6 +28,7 @@ import java.util.List;
  */
 public class Subsets {
     public List<List<Integer>> subsets(int[] nums) {
+        Arrays.sort(nums);
         List<List<Integer>> output = new ArrayList<>();
         subsets(nums, new ArrayList<>(), 0, output);
         return output;
