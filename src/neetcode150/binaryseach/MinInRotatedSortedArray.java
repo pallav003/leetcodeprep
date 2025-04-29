@@ -19,6 +19,7 @@ package neetcode150.binaryseach;
  * Output: 1
  */
 public class MinInRotatedSortedArray {
+
     public int findMin(int[] nums) {
         int left = 0;
         int right = nums.length - 1;
