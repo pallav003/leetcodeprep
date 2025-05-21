@@ -6,7 +6,8 @@ import java.util.List;
 /**
  * Binary Tree Right Side View
  * Solved
- * You are given the root of a binary tree. Return only the values of the nodes that are visible from the right side of the tree, ordered from top to bottom.
+ * You are given the root of a binary tree. Return only the values of the
+ * nodes that are visible from the right side of the tree, ordered from top to bottom.
  * <p>
  * Example 1:
  * <p>

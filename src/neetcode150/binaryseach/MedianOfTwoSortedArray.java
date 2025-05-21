@@ -2,7 +2,9 @@ package neetcode150.binaryseach;
 
 /**
  * Median of Two Sorted Arrays
- * You are given two integer arrays nums1 and nums2 of size m and n respectively, where each is sorted in ascending order. Return the median value among all elements of the two arrays.
+ * You are given two integer arrays nums1 and nums2 of size m and n respectively,
+ * where each is sorted in ascending order. Return the median value among all elements
+ * of the two arrays.
  * <p>
  * Your solution must run in
  * O

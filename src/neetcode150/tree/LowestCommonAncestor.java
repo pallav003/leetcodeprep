@@ -2,9 +2,12 @@ package neetcode150.tree;
 
 /**
  * Lowest Common Ancestor in Binary Search Tree
- * Given a binary search tree (BST) where all node values are unique, and two nodes from the tree p and q, return the lowest common ancestor (LCA) of the two nodes.
+ * Given a binary search tree (BST) where all node values are unique, and
+ * two nodes from the tree p and q, return the lowest common ancestor (LCA) of the two nodes.
  * <p>
- * The lowest common ancestor between two nodes p and q is the lowest node in a tree T such that both p and q as descendants. The ancestor is allowed to be a descendant of itself.
+ * The lowest common ancestor between two nodes p and q is the lowest node in
+ * a tree T such that both p and q as descendants. The ancestor is allowed to be a
+ * descendant of itself.
  * Example 1:
  * <p>
  * <p>
