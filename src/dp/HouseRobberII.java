@@ -5,9 +5,13 @@ import java.util.Arrays;
 /**
  * House Robber II
  * Solved
- * You are given an integer array nums where nums[i] represents the amount of money the ith house has. The houses are arranged in a circle, i.e. the first house and the last house are neighbors.
+ * You are given an integer array nums where nums[i] represents the amount of
+ * money the ith house has. The houses are arranged in a circle, i.e.
+ * the first house and the last house are neighbors.
  * <p>
- * You are planning to rob money from the houses, but you cannot rob two adjacent houses because the security system will automatically alert the police if two adjacent houses were both broken into.
+ * You are planning to rob money from the houses, but you cannot rob
+ * two adjacent houses because the security system will automatically alert
+ * the police if two adjacent houses were both broken into.
  * <p>
  * Return the maximum amount of money you can rob without alerting the police.
  * <p>
