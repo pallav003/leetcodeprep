@@ -1,3 +1,4 @@
+package cses;
 
 import java.util.Scanner;
 
